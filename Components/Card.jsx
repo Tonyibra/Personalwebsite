@@ -6,9 +6,9 @@ export const Card = (props) => {
   return (
     <div>
       <div className="py-8">
-        <div className="absolute h-[300px] w-[500px] shadow-lg md:relative">
+        <div className="absolute h-[300px] w-[500px] rounded-xl shadow-xl md:relative">
           <Image
-            className="opacity-30"
+            className="opacity-30 "
             objectFit="contain"
             layout="fill"
             src="https://www.ceotodaymagazine.com/CEO-Today/wp-content/uploads/2019/10/Google-Docs-e1570528347607.jpg"
