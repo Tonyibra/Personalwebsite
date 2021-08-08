@@ -3,6 +3,7 @@ import { Header } from "../Components/Header";
 import { HomeSection } from "../Components/HomeSection";
 import { Intro } from "../Components/Intro";
 import { AnimatePresence, motion } from "framer-motion";
+import { Projects } from "../Components/Projects";
 export default function Home() {
   const mainPage = {
     from: {
@@ -23,6 +24,7 @@ export default function Home() {
             <motion.div initial="from" animate="to" variants={mainPage}>
               <Header />
               <HomeSection />
+              <Projects />
             </motion.div>
           </div>
         </main>

@@ -11,7 +11,7 @@ export const HomeSection = () => {
     hidden: { opacity: 0, y: -15, z: 0 },
   };
   return (
-    <section className="p-6 sm:p-8 md:p-10 flex flex-col my-20 mx-10">
+    <section className="p-6 sm:p-8 md:p-10 flex flex-col mt-20 mx-10">
       <div className="relative h-[120px] w-[120px]">
         <Image
           className="border border-gray-700 rounded-full"
@@ -20,10 +20,15 @@ export const HomeSection = () => {
         />
       </div>
       <div className="pt-6">
-        <span className="font-bold text-5xl ">Hi, I'm Tony! 👋 </span>
-        <p className="font-semibold text-xl sm:text-2xl md:text-3xl xl:text-4xl pt-4">
+        <span className="font-bold text-5xl text-gray-900 ">
+          Hi, I'm Tony! 👋{" "}
+        </span>
+        <p className="font-semibold text-xl sm:text-2xl md:text-3xl xl:text-4xl pt-4 text-gray-900">
           Full-stack ninja, student, Currently Front end engineer
-          <a href="" className=" relative text-indigo-600 cursor-pointer">
+          <a
+            href=""
+            className=" relative text-indigo-600 cursor-pointer text-gray-900"
+          >
             @PropertyCard
             <motion.span
               whileHover="hover"
@@ -60,17 +65,17 @@ export const HomeSection = () => {
       </div>
       <div>
         <p
-          className="pb-4 py-6 text-md sm:text-lg md:text-xl lg:text-2xl xl:text-2xl
+          className="pb-4 py-6 text-md sm:text-lg md:text-xl lg:text-2xl xl:text-2xl text-gray-900
         "
         >
           I am a second year CS student at NDU.
         </p>
-        <p className="pb-6 text-md sm:text-lg md:text-xl lg:text-2xl xl:text-2xl">
+        <p className="pb-6 text-md sm:text-lg md:text-xl lg:text-2xl xl:text-2xl text-gray-900">
           I enjoy creating Webapps and mobile apps with cool designs.
           <br />
           My technology stack includes React,TypeScript and Nodejs
         </p>
-        <p className="pb-6 text-md sm:text-lg md:text-xl lg:text-2xl xl:text-2xl">
+        <p className="pb-6 text-md sm:text-lg md:text-xl lg:text-2xl xl:text-2xl text-gray-900">
           I am also freelancing at upwork
         </p>
       </div>

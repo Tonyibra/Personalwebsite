@@ -46,7 +46,7 @@ export const Intro = () => {
             initial="hidden"
             animate="visible"
             variants={textAnim}
-            className="text-md sm:text-2xl tect-black"
+            className="text-md sm:text-2xl text-gray-900"
           >
             Ninjas are not born, they are made
           </motion.span>
