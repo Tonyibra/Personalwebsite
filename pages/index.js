@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Header } from "../Components/Header";
+import { HomeSection } from "../Components/HomeSection";
 import { Intro } from "../Components/Intro";
-
 export default function Home() {
   return (
     <div>
@@ -9,13 +9,10 @@ export default function Home() {
         <title>Home | Tony ibrahim</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* Header */}
-
-      {/* body */}
-      <section className="flex ">
+      <main className="max-w-4xl mx-auto">
         <Intro />
-      </section>
-      {/* footer */}
+        <HomeSection />
+      </main>
     </div>
   );
 }
