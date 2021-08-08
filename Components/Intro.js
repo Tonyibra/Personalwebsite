@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Header } from "./Header";
 import HomeSection from "./HomeSection";
 export const Intro = () => {
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+  }, []);
+
   const animation = {
     visible: { opacity: 1, y: 0 },
     hidden: {

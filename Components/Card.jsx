@@ -30,10 +30,6 @@ export const Card = (props) => {
           <span className="cursor-pointer">React</span>
           <span className=" cursor-pointer mx-2">Gatsby</span>
           <span className=" cursor-pointer space-x-4">Node.js</span>
-        </div>
-      </div>
-      <div>
-        <div className="relative h-6 w-6 m-6 pt-4">
           <SocialImage src="https://cdns.iconmonstr.com/wp-content/assets/preview/2012/240/iconmonstr-github-1.png" />
         </div>
       </div>
