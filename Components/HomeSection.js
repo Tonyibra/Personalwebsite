@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { SocialImage } from "./SocialImage";
 export const HomeSection = () => {
   const hoverEffect = {
     visible: {
@@ -40,28 +41,10 @@ export const HomeSection = () => {
           </a>
         </p>
       </div>
-      <div className="flex pt-6">
-        <div className="relative h-6 w-6 my-4 transition-all duration-200 ease-out hover:scale-125 hover:rotate-12 ">
-          <Image
-            className="cursor-pointer"
-            src="https://cdns.iconmonstr.com/wp-content/assets/preview/2012/240/iconmonstr-github-1.png"
-            layout="fill"
-          />
-        </div>
-        <div className="relative h-6 w-6 m-4 transition-all duration-200 ease-out hover:scale-125 hover:rotate-12 ">
-          <Image
-            className="cursor-pointer"
-            src="https://cdns.iconmonstr.com/wp-content/assets/preview/2012/240/iconmonstr-linkedin-3.png"
-            layout="fill"
-          />
-        </div>
-        <div className="relative h-6 w-6 my-4 transition-all duration-200 ease-out hover:scale-125 hover:rotate-12 ">
-          <Image
-            className="cursor-pointer"
-            src="https://cdns.iconmonstr.com/wp-content/assets/preview/2016/240/iconmonstr-instagram-13.png"
-            layout="fill"
-          />
-        </div>
+      <div className="flex pt-6 space-x-3">
+        <SocialImage src="https://cdns.iconmonstr.com/wp-content/assets/preview/2012/240/iconmonstr-github-1.png" />
+        <SocialImage src="https://cdns.iconmonstr.com/wp-content/assets/preview/2012/240/iconmonstr-linkedin-3.png" />
+        <SocialImage src="https://cdns.iconmonstr.com/wp-content/assets/preview/2016/240/iconmonstr-instagram-13.png" />
       </div>
       <div>
         <p
@@ -75,7 +58,7 @@ export const HomeSection = () => {
           <br />
           My technology stack includes React,TypeScript and Nodejs
         </p>
-        <p className="pb-6 text-md sm:text-lg md:text-xl lg:text-2xl xl:text-2xl text-gray-900">
+        <p className=" pb-6 text-md sm:text-lg md:text-xl lg:text-2xl xl:text-2xl text-gray-900">
           I am also freelancing at upwork
         </p>
       </div>

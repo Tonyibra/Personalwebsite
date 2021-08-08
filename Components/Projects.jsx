@@ -1,4 +1,5 @@
 import React from "react";
+import { Card } from "./Card";
 
 export const Projects = () => {
   return (
@@ -10,6 +11,12 @@ export const Projects = () => {
         Here are some of my most favourite projects that I enjoyed coding and
         designing from scratch
       </p>
+      <Card
+        title="test"
+        subtitle="subtitle"
+        about="lorem"
+        stack={["React,TypeScript,Rest"]}
+      />
     </div>
   );
 };
