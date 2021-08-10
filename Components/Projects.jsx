@@ -7,16 +7,13 @@ export const Projects = ({ data }) => {
       <span className="text-gray-900 font-bold text-4xl sm:text-2xl">
         Projects
       </span>
-      <p className="text-gray-900 pt-4">
+      <p className="text-gray-900 pt-4 pb-9">
         Here are some of my most favourite projects that I enjoyed coding and
         designing from scratch
       </p>
-      <Card
-        title="test"
-        subtitle="subtitle"
-        about="lorem"
-        stack={["React,TypeScript,Rest"]}
-      />
+      {data?.map((item, idx) => (
+        <Card key={idx} item={item} />
+      ))}
     </div>
   );
 };

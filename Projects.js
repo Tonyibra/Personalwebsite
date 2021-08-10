@@ -1,9 +1,36 @@
 export const Projects = [
   {
     title: "Google Docs Clone",
-    subtitle: "subtitle",
-    about: "lorem",
+    subtitle: "Online sheets made easy",
+    about:
+      "Clone for the large Google docs with full functionalities using realtime database ",
     stack: ["Nextjs", "firebase", "draftjs"],
     img: "https://www.ceotodaymagazine.com/CEO-Today/wp-content/uploads/2019/10/Google-Docs-e1570528347607.jpg",
+    live: true,
+    github: true,
+    liveLink: "https://docs-tonyibra.vercel.app/",
+    githubLink: "https://github.com/Tonyibra/Docs",
+  },
+  {
+    title: "Airbnb Clone",
+    subtitle: "UI clone for Airbnb website",
+    about: "Clone for the Airbnb website",
+    stack: ["Nextjs", "tailwindCss"],
+    img: "https://news.airbnb.com/wp-content/uploads/sites/4/2020/04/Airbnb_Lockup_Over_Gradient.png?w=2048",
+    live: true,
+    github: true,
+    liveLink: "https://air-bnb-clone-xi.vercel.app/",
+    githubLink: "https://github.com/Tonyibra/AirBnb-Clone",
+  },
+  {
+    title: "Covid Tracker",
+    subtitle: "Track Covid 19 made easy",
+    about: "Created the webapp to track covid cases, deaths and recovery",
+    stack: ["Reactjs", "leafletjs"],
+    img: "https://www.statnews.com/wp-content/uploads/2020/03/corona-tracker-social-image-1-1024x576.jpg",
+    live: true,
+    github: true,
+    liveLink: "https://covid-tracker-e8313.web.app/",
+    githubLink: "",
   },
 ];
