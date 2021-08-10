@@ -1,10 +1,10 @@
 import React from "react";
 import { Card } from "./Card";
 
-export const Projects = () => {
+export const Projects = ({ data }) => {
   return (
-    <div className="p-6 sm:p-8 md:px-10 mx-10">
-      <span className="text-gray-900 font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl ">
+    <div className="p-4 sm:p-8 md:px-10 xl:mx-10">
+      <span className="text-gray-900 font-bold text-4xl sm:text-2xl">
         Projects
       </span>
       <p className="text-gray-900 pt-4">

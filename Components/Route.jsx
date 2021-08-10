@@ -3,12 +3,12 @@ import { Header } from "./Header";
 import { HomeSection } from "./HomeSection";
 import { Projects } from "./Projects";
 
-const Route = () => {
+const Route = ({ data }) => {
   return (
     <section>
       <Header />
       <HomeSection />
-      <Projects />
+      <Projects data={data} />
     </section>
   );
 };

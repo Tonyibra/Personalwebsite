@@ -2,11 +2,10 @@ import React from "react";
 import Image from "next/image";
 import { SocialImage } from "./SocialImage";
 export const Card = (props) => {
-  console.log(props);
   return (
     <div>
       <div className="py-8">
-        <div className="absolute h-[300px] w-[500px] rounded-xl shadow-xl md:relative">
+        <div className="absolute w-[90%] h-[300px] xl:w-[500px] rounded-xl shadow-xl md:relative">
           <Image
             className="opacity-30 "
             objectFit="contain"

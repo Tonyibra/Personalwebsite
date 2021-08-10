@@ -12,7 +12,7 @@ export const HomeSection = () => {
     hidden: { opacity: 0, y: -15, z: 0 },
   };
   return (
-    <section className="p-6 sm:p-8 md:p-10 flex flex-col mt-20 mx-10">
+    <section className="p-6 sm:p-8 md:p-10 flex flex-col mt-20 xl:mx-10">
       <div className="relative h-[120px] w-[120px]">
         <Image
           className="border border-gray-700 rounded-full"

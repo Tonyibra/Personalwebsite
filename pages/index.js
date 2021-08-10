@@ -6,8 +6,9 @@ import { Intro } from "../Components/Intro";
 import { AnimatePresence, motion } from "framer-motion";
 import { Projects } from "../Components/Projects";
 import Route from "../Components/Route";
-export default function Home() {
+export default function Home({ data }) {
   React.useEffect(() => {
+    console.log(data);
     document.body.style.overflow = "hidden";
   }, []);
   const mainPage = {
@@ -27,11 +28,25 @@ export default function Home() {
           <Intro />
           <div className="max-w-4xl mx-auto">
             <motion.div initial="from" animate="to" variants={mainPage}>
-              <Route />
+              <Route data={data} />
             </motion.div>
           </div>
         </main>
       </div>
     </>
   );
+}
+export async function getServerSideProps(context) {
+  const res = await fetch(`http://localhost:3000/api/Projects`);
+  const data = await res.json();
+
+  if (!data) {
+    return {
+      notFound: true,
+    };
+  }
+
+  return {
+    props: { data }, // will be passed to the page component as props
+  };
 }

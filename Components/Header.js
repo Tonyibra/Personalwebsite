@@ -11,7 +11,7 @@ export const Header = () => {
   return (
     <header>
       {/* left */}
-      <div className={"px-20 pt-10"}>
+      <div className={"px-6 pt-6"}>
         <span className="text-2xl font-semibold ">Tony Ibrahim</span>
       </div>
       {/* right */}
